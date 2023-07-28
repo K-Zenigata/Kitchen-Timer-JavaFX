@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "JavaFX Maven Launch",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "com.example/com.example.MyMain",
+            "projectName": "kitchen_timer",
+            "args": "javafx:run -f あなたのパス\\kitchen_timer\\pom.xml",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

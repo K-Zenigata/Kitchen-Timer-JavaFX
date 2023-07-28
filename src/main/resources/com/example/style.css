@@ -1,0 +1,22 @@
+.root {
+    -fx-background-color: #fdafaf;
+    -fx-background-radius: 20px;
+}
+
+.timerView {
+    -fx-background-color: #2c001b;
+}
+
+.setTimePanel {
+    -fx-background-color: rgb(245, 150, 170);
+}
+
+.tNamePanel {
+    -fx-background-color: rgb(208, 180, 176);
+}
+
+.startBtn,
+.clearBtn,
+.stopBtn {
+    -fx-background-color: rgb(254, 223, 225);
+}

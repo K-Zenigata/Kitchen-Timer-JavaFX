@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "JavaFX Maven Run",
+			"type": "shell",
+			"command": "mavenのあなたのパス\\bin\\mvn",
+			"args": [
+				"javafx:run",
+				"-f",
+				"あなたのパス\\kitchen_timer\\pom.xml"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		}
+	]
+}

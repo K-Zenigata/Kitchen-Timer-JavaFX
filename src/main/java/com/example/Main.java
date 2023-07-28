@@ -17,22 +17,12 @@ public class Main extends Application {
 
         Parent root = loader.load();
 
-        // // CSSファイルを読み込む
-        // String css = this.getClass().getResource("style.css").toExternalForm();
-
-        // // rootにCSSを適用
-        // root.getStylesheets().add(css);
-
-        // 外部ファイル取り込み時 任意のclass名
-        // OtherController otherController = loader.getController();
-
         Scene scene = new Scene(root);
 
         
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
         
-        // stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Template fxml");

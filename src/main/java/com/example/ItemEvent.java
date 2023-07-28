@@ -16,13 +16,7 @@ public class ItemEvent implements EventHandler<ActionEvent> {
     private volatile boolean counting = false;
 
     private MediaPlayer mediaPlayer;
-    // .mp3ファイルのパスを取得
-    // String mp3Path = "/assets/sample.mp3";
-
-    // リソースファイルにアクセスするためにClassLoaderを使用
-    // ClassLoader classLoader = ItemEvent.class.getClassLoader();
-    // InputStream inputStream = classLoader.getResourceAsStream(mp3Path);
-
+ 
     private int count = 0;
     private final int H_COUNT = 3600;
     private final int M_COUNT = 60;
@@ -45,7 +39,6 @@ public class ItemEvent implements EventHandler<ActionEvent> {
             if (id.equals("hPlusBtn")) {
 
                 count += H_COUNT;
-                // System.out.println("Hour +");
 
             } else if (id.equals("hMinusBtn")) {
 
@@ -54,12 +47,10 @@ public class ItemEvent implements EventHandler<ActionEvent> {
                     return;
 
                 count -= H_COUNT;
-                // System.out.println("Hour -");
 
             } else if (id.equals("mPlusBtn")) {
 
                 count += M_COUNT;
-                // System.out.println("Minute +");
 
             } else if (id.equals("mMinusBtn")) {
 
@@ -68,12 +59,10 @@ public class ItemEvent implements EventHandler<ActionEvent> {
                     return;
 
                 count -= M_COUNT;
-                // System.out.println("Minute -");
 
             } else if (id.equals("sPlusBtn")) {
 
                 count += S_COUNT;
-                // System.out.println("Second +");
 
             } else if (id.equals("sMinusBtn")) {
 
@@ -82,10 +71,8 @@ public class ItemEvent implements EventHandler<ActionEvent> {
                     return;
 
                 count -= S_COUNT;
-                // System.out.println("Second -");
             }
 
-            // System.out.println("count: " + count);
             SetTime(count);
         }
 
@@ -95,13 +82,11 @@ public class ItemEvent implements EventHandler<ActionEvent> {
 
         if (text.equals(btnAction[0])) {
             // timer start
-            // System.out.println("start");
             counting = true;
             CountDownTimer();
 
         } else if (text.equals(btnAction[1])) {
             // timer stop
-            // System.out.println("stop");
             counting = false;
 
             if (mediaPlayer != null) {
@@ -112,7 +97,6 @@ public class ItemEvent implements EventHandler<ActionEvent> {
         } else if (text.equals(btnAction[2])) {
             count = 0;
             SetTime(count);
-            // System.out.println("clear");
         }
     }
 
@@ -165,7 +149,6 @@ public class ItemEvent implements EventHandler<ActionEvent> {
             while (count > 0 && counting) {
                 Platform.runLater(() -> {
                     SetTime(count);
-                    // System.out.println(count);
                 });
 
                 count--;

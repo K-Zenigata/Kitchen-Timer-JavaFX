@@ -51,7 +51,6 @@ public class Controller implements Initializable {
 
     @FXML
     void shutdown(MouseEvent event) {
-        // System.out.println("ShutDown");
         System.exit(0);
     }
 

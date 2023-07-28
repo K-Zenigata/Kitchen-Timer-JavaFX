@@ -1,1 +1,1 @@
-![kitchen_timer400](https://github.com/K-Zenigata/KitchenTimer_JavaFX/assets/114846454/fd3bf8cc-15b8-4f86-a7a3-baa59e8c519d)
+![kitchen_timer](https://github.com/K-Zenigata/KitchenTimer_JavaFX/assets/114846454/fe10ede1-7f93-4564-9dc5-2cf3b31d9441)
